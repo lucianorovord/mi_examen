@@ -9,12 +9,11 @@ jobs:
     
     steps:
       - name: Deploy (Local)
+        shell: bash
         uses: appleboy/ssh-action@master
 
         with:
           host: ${{ secrets.HOST2 }}
-          port: ${{ secrets.PORT3 }}
-          password: ${{ secrets.PASS}}
           
           script: |
             set -e
