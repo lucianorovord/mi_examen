@@ -13,7 +13,7 @@ jobs:
 
         with:
           host: ${{ secrets.HOST2 }}
-          port: ${{ secrets.PORT2 }}
+          port: ${{ secrets.PORT3 }}
           password: ${{ secrets.PASS}}
           
           script: |
