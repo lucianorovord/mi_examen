@@ -9,10 +9,13 @@ jobs:
     
     steps:
       - name: Deploy (Local)
+        uses: appleboy/ssh-action@master
+
         with:
           host: ${{ secrets.USER }}
-          
+
           run: |
+            set -e
             cd /home/lucci/Escritorio/mi_examen
             git pull
 
