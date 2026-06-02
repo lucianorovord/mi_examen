@@ -16,7 +16,7 @@ jobs:
           port: ${{ secrets.PORT }}
           password: ${{ secrets.PASS}}
           
-          run: |
+          script: |
             set -e
             cd /home/lucci/Escritorio/mi_examen
             git pull
